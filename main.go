@@ -67,9 +67,8 @@ func main() {
 				}
 			}
 		}
+		time.Sleep(1 * time.Second)
 	}
-
-	time.Sleep(1 * time.Second)
 
 	if err := scanner.Err(); err != nil {
 		log.Fatalf("Ошибка при чтении файла: %v", err)
